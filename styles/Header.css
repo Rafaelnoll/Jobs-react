@@ -1,9 +1,9 @@
 .homepage-body{
     width:80%;
-    height: 80vh;
+    height: 100vh;
     display: flex;
     align-items: center;
-    margin: 2rem auto;
+    margin: 0 auto;
 }
 
 .homaepage-texts{
@@ -12,12 +12,14 @@
 }
 
 .homepage-title{
-    font-size: 5rem;
+    font-size: 61px;
     margin-bottom: 2rem;
+    font-family: 'DM Serif Display', serif;
 }
 
 .homepage-subtitle{
-    font-size: 24px;
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .newsletter-form{
@@ -40,12 +42,19 @@
     color:#fff;
     border:none;
     cursor:pointer;
+    transition: background-color .2s;
+}
+
+.form-button:hover{
+    background-color: var(--primary-hover-color);
 }
 
 @media screen and (max-width:1250px){
     .homepage-body{
-        flex-wrap:wrap;
+        flex-wrap: wrap;
+        text-align: center;
         justify-content: center;
+        height: 80vh;
     }
     .homaepage-texts{
         width: 100%;
@@ -53,6 +62,9 @@
     .newsletter-form-container{
         display: flex;
         justify-content: center;
+    }
+    .homapage-image-container{
+        display: none;
     }
 }
 

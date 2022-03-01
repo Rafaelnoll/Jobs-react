@@ -1,0 +1,55 @@
+.wide-block{
+    width: 45%;
+    text-align: center;
+}
+
+.wide-block .badge{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: .25rem 1rem;
+    margin-bottom: 1rem;
+    border-radius: 3px;
+    color: #fff;
+    background-color: var(--secundary-color);
+}
+
+.wide-block-texts{
+    color: var(--text-color);
+    padding: 1rem 0;
+}
+
+.wide-block-title{
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 1rem;
+    font-family: 'DM Serif Display', serif;
+}
+
+.wide-block-subtitle{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.wide-block-button{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 24px;
+    color:#fff;
+    background-color: var(--secundary-color);
+    transition: background-color .2s ;
+}
+
+.wide-block-button:hover{
+    background-color: var(--secundary-hover-color);
+}
+
+@media screen and (max-width:950px){
+    .wide-block{
+        width:100%;
+        margin-bottom: 5rem;
+    }
+}

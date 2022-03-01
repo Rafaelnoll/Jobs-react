@@ -1,0 +1,15 @@
+.wide-grid{
+    display:flex;
+    justify-content: space-between;
+
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width:950px) {
+    .wide-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+}

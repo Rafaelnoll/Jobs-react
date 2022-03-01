@@ -3,9 +3,14 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
 :root{
 	--text-color:#393740;
 	--primary-color: #205551;
+	--secundary-color: #068466;
+	--primary-hover-color: #1b4744;
+	--secundary-hover-color: #08a37f;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -50,4 +55,8 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+a{
+	text-decoration: none;
 }

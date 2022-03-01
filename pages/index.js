@@ -1,30 +1,13 @@
 import Navbar from "../src/components/Navbar";
-import Image from "next/image";
-import HomepageImage from "../styles/img/homepage-image.png";
+import Header from "../src/components/Header";
+import WideGrid from "../src/components/WideGrid";
 
 export default function Home() {
   return (
     <>
       <Navbar />
-      <section className="homepage-body">
-        <div className="homepage-container">
-          <div className="homaepage-texts">
-            <h1 className="homepage-title">Encontre as melhores oportunidades de emprego</h1>
-            <h3 className="homepage-subtitle">Trabalhe de casa, remotamente, freelance,contrato, e full-time. Se inscreva na nossa newsletter semanal.</h3>
-          </div>
-          <div className="newsletter-form-container">
-            <form className="newsletter-form">
-              <input type="email" className="form-input" placeholder="Seu Endereço de Email" />
-              <button type="submit" className="form-button">Inscrever-se!</button>
-            </form>
-          </div>
-        </div>
-        <Image
-          src={HomepageImage}
-          width={1100}
-          height={1000}
-        />
-      </section>
+      <Header />
+      <WideGrid />
     </>
   )
 }
