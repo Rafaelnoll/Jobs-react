@@ -3,7 +3,7 @@
     text-align: center;
 }
 
-.wide-block .badge{
+.badge{
     display: inline-block;
     text-transform: uppercase;
     font-weight: 500;
