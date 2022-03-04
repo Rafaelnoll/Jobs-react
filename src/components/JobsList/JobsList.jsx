@@ -1,7 +1,8 @@
 import React from "react";
 import DropDown from "../DropDown";
+import Job from "../Job";
 
-//Fake database
+//Fake filters database
 const filters = [
     {
         name: "Tipo",
@@ -13,8 +14,8 @@ const filters = [
         ]
     },
     {
-        name:"Categoria",
-        itemsList:[
+        name: "Categoria",
+        itemsList: [
             "Marketing",
             "Técnico",
             "Editor",
@@ -26,8 +27,8 @@ const filters = [
         ]
     },
     {
-        name:"Nível",
-        itemsList:[
+        name: "Nível",
+        itemsList: [
             "Qualquer",
             "Iniciante",
             "Intermedíario",
@@ -35,13 +36,45 @@ const filters = [
         ]
     },
     {
-        name:"Localização",
-        itemsList:[
+        name: "Localização",
+        itemsList: [
             "Local",
             "Remoto",
             "Remoto (BR)",
             "Remoto (USA)"
         ]
+    }
+];
+
+//Fake jobs database
+const jobs = [
+    {
+        jobName: "Escritor",
+        companyName: "GoodPlace",
+        jobLocation: "Remoto (USA)",
+        jobType: "Meio-Período",
+        postDate: "4 de Março, 2022"
+    },
+    {
+        jobName: "Designer de UX",
+        companyName: "UXLegal",
+        jobLocation: "Remoto (BR)",
+        jobType: "Contrato",
+        postDate: "3 de Março, 2022"
+    },
+    {
+        jobName: "Desenvolvedor Front-end Junior",
+        companyName: "DevLife",
+        jobLocation: "Local",
+        jobType: "Tempo Integral",
+        postDate: "3 de Março, 2022"
+    },
+    {
+        jobName: "Marketing Digital",
+        companyName: "MarketingKing",
+        jobLocation: "Remoto (USA)",
+        jobType: "Freelance",
+        postDate: "2 de Março, 2022"
     }
 ]
 
@@ -64,6 +97,21 @@ export default function JobsList() {
                     })}
                 </ul>
             </div>
+            <ul className="jobs-list">
+                {jobs.map((job, index) => {
+                    return (
+                        <li key={index} className="list-item">
+                            <Job 
+                                jobName={job.jobName}
+                                companyName={job.companyName}
+                                jobType={job.jobType}
+                                jobLocation={job.jobLocation}
+                                postDate={job.postDate}
+                            />
+                        </li>
+                    );
+                })}
+            </ul>
         </section>
     );
 }

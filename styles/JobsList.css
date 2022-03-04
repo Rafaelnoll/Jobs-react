@@ -31,6 +31,16 @@
     align-items: center;
 }
 
+.jobs-list{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 792px;
+    margin: 1.5rem auto;
+    text-align: center;
+}
+
+
 @media screen and (max-width:660px) {
     .filters-list{
         display: block;
