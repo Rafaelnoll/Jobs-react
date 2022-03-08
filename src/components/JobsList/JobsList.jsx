@@ -1,6 +1,6 @@
 import React from "react";
 import DropDown from "../DropDown";
-import Job from "../Job";
+import Job from "./Job";
 
 //Fake filters database
 const filters = [
@@ -48,6 +48,34 @@ const filters = [
 
 //Fake jobs database
 const jobs = [
+    {
+        jobName: "Escritor",
+        companyName: "GoodPlace",
+        jobLocation: "Remoto (USA)",
+        jobType: "Meio-Período",
+        postDate: "4 de Março, 2022"
+    },
+    {
+        jobName: "Designer de UX",
+        companyName: "UXLegal",
+        jobLocation: "Remoto (BR)",
+        jobType: "Contrato",
+        postDate: "3 de Março, 2022"
+    },
+    {
+        jobName: "Desenvolvedor Front-end Junior",
+        companyName: "DevLife",
+        jobLocation: "Local",
+        jobType: "Tempo Integral",
+        postDate: "3 de Março, 2022"
+    },
+    {
+        jobName: "Marketing Digital",
+        companyName: "MarketingKing",
+        jobLocation: "Remoto (USA)",
+        jobType: "Freelance",
+        postDate: "2 de Março, 2022"
+    },
     {
         jobName: "Escritor",
         companyName: "GoodPlace",

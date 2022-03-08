@@ -1,5 +1,5 @@
 import React from "react";
-import WideBlock from "../WideBlock";
+import WideBlock from "./WideBlock";
 
 export default function WideGrid() {
     return (

@@ -2,6 +2,7 @@ import Navbar from "../src/components/Navbar";
 import Header from "../src/components/Header";
 import WideGrid from "../src/components/WideGrid";
 import JobsList from "../src/components/JobsList";
+import Subscribe from "../src/components/Subscribe";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header />
       <WideGrid />
       <JobsList />
+      <Subscribe />
     </>
   )
 }

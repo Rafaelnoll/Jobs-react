@@ -6,6 +6,7 @@ import "../styles/WideBlock.css";
 import "../styles/JobsList.css";
 import "../styles/DropDown.css";
 import "../styles/Job.css";
+import "../styles/Subscribe.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
